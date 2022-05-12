@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script defer type="module">
+      import { iteriaApp } from '@iteria-app/ide-devserver'
+      iteriaApp({
+        graphQLEndpoint: '%VITE_HASURA_GRAPHQL_ENDPOINT%',
+        cwd: '%VITE_CWD%',
+        injectMode: '%VITE_INJECT_MODE%',
+        mode: '%VITE_MODE%',
+        features: {
+          tippy: true,
+          generator: true,
+          addFields: true,
+          translations: true,
+          themeEditor: true,
+          graphQLEndpoint: true,
+          floatingButton: true,
+        },
+      })
+    </script>
+    <script type="module" defer src="/src/main.tsx"></script>
+  </body>
+</html>

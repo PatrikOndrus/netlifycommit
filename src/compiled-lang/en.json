@@ -1,0 +1,9 @@
+{
+  "customers": "CUSTOMERS",
+  "total.customers": "TOTAL CUSTOMERS",
+  "total.profit": "TOTAL PROFIT",
+  "budget": "BUDGET",
+  "tasks.progress": "TASKS PROGRESS",
+  "orders.order_date": "Order date",
+  "orders.created_at": "Created at"
+}
